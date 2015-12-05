@@ -1,8 +1,8 @@
 # springcloud-microservicesapp-onlinestore
 
-This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration. This can run on outside PCF using OSS Netflix but Some changes and additinal development are needed. **This app was developed for very short term. Some error handling is not yet implemented and also refactoring is highly required. Take care to user:)**
+This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration. This can run outside PCF using OSS Netflix but Some changes and additinal development are needed. **This app was developed for very short term. Some error handling is not yet implemented and also refactoring is highly required. Take care to user:)**
 
-# Pre-requisite
+## Pre-requisite
 This application requires five PCF services.
 * MySQL for PCF (Datastore) : http://docs.pivotal.io/p-mysql/index.html
  * Service Name : mysql (depends on manifest.yml) 
@@ -17,9 +17,13 @@ This application requires five PCF services.
   * Registry Server (Netflix Eureka and Feign)
    * Service Name : scs-registry-server (depends on manifest.yml) 
 
-# Build
- git clone https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore.git
- cd springcloud-microservicesapp-onlinestore
- mvn package
+## Build & Push
+```bash
+  git clone https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore.git
+  cd springcloud-microservicesapp-onlinestore
+  mvn package
+  cf push
+````
+## Application Architecture
 
-# 
+
