@@ -1,4 +1,4 @@
-== springcloud-microservicesapp-onlinestore
+= springcloud-microservicesapp-onlinestore
 
 This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration.
 
