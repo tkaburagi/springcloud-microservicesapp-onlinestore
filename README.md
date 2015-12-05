@@ -36,7 +36,7 @@ This is a simple Online Store.
  * Default users are "testuser", "tkabruagi" and "robmee"
  * Password is fake. You can put any value.
  * If you would like to change or add new users, you woud edit "import.aql" in **demo-onlinestore-user**
- * After login, creating session and retrieve products via ****demo-onlinestore-service**.
+ * After login, creating session and retrieve products via **demo-onlinestore-service**.
 
 * Home
  * You can see products list. Checkout button insert the product into orderhistrory table by **demo-onlinestore-order**
