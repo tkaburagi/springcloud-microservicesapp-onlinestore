@@ -25,7 +25,7 @@ This application requires five PCF services.
   $ cf push
 ````
 ## Application Architecture
-
+![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/Architecture.png)
 
 ## Demonstration
 ### 1. Registry Server
