@@ -8,7 +8,7 @@ This application requires five PCF services.
  * Service Name : mysql (depends on manifest.yml) 
 * Redis for PCF (HTTP Session Store) : http://docs.pivotal.io/redis/index.html
  * Service Name : sessoion-replication (Fix)
-  * Why shoul be the name fixed? -> https://github.com/cloudfoundry/java-buildpack/blob/master/docs/container-tomcat.md 
+  * Why should be the name fixed? -> https://github.com/cloudfoundry/java-buildpack/blob/master/docs/container-tomcat.md 
 * Pivotal Spring Cloud Services : http://docs.pivotal.io/spring-cloud-services/index.html
   * Config Server (Config Server)
    * Service Name : scs-config-server (depends on manifest.yml) 
