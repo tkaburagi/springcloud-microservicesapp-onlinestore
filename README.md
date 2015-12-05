@@ -1,6 +1,6 @@
 # springcloud-microservicesapp-onlinestore
 
-This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration. This can run on outside PCF using OSS Netflix but Some changes and additinal development are needed. *This app was developmed for very short term. Some error handling is not yet implemented and refactoring is highly needed. Take care to user:)*
+This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration. This can run on outside PCF using OSS Netflix but Some changes and additinal development are needed. **This app was developed for very short term. Some error handling is not yet implemented and also refactoring is highly required. Take care to user:)**
 
 # Pre-requisite
 This application requires five PCF services.
