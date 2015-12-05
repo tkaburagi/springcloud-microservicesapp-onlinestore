@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http:///www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Nunito:700'
+	rel='stylesheet' type='text/css' />
+
+<style type="text/css">
+div.ta0 {
+	text-align: left;
+}
+
+div.ta1 {
+	text-align: center;
+}
+
+div.ta2 {
+	text-align: right;
+}
+
+div.ta3 {
+	text-align: justify;
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto
+}
+
+.button-success, .button-corp, .button-error, .button-warning,
+	.button-secondary {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+	background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-corp {
+	background: rgb(1, 120, 110); /* this is a green */
+}
+
+.button-error {
+	background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+	background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+	background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.logo {
+	font-family: 'Nunito', sans-serif;
+}
+</style>
+
+
+<meta charset="UTF-8" />
+<title>Pivotal Online Store</title>
+</head>
+<body>
+	<div class="ta1 pure-menu pure-menu-horizontal pure-menu-scrollable" style="background-color: #01786e;">
+		
+		
+		<ul class="pure-menu-list">
+					
+			<li class="pure-menu-item">
+				<form class="pure-form" th:method="post" th:action="@{/javainfo}"> 
+					<button type="submit" class="button-corp pure-button">
+					<i class="fa fa-user fa-lg"></i><font class="logo"> Menu</font></button>
+				</form>
+			</li>					
+					
+					
+			<li class="pure-menu-item">
+				<form class="pure-form" th:method="post" th:action="@{/javainfo}"> 
+					<button type="submit" class="button-corp pure-button">
+					<i class="fa fa-leaf fa-lg"></i><font class="logo"> Java Information</font></button>
+				</form>
+			</li>
+			
+			<li class="pure-menu-item">
+				<form class="pure-form" th:method="post" th:action="@{/kill}"> 
+					<button type="submit" class="button-corp pure-button">
+					<i class="fa fa-bomb fa-lg"></i><font class="logo"> Kill Application</font></button>
+				</form>
+			</li>
+		
+			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
+			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
+			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
+
+			<li class="pure-menu-item">
+				<form class="pure-form">
+					<input type="text" class="pure-input-rounded" />
+					<button type="submit" class="button-success pure-button">
+						<i class="fa fa-search fa-lg"></i><font class="logo"> Search</font></button>
+				</form>
+			</li>
+		</ul>
+	</div>
+
+	<div class="ta1">
+		<h1 class="logo">Pivotal Online Store</h1>
+		<h2 class="logo">
+			Welcome, <a th:text="${session.username}"></a>. Enjoy your shopping!
+		</h2>
+	</div>
+	<table class="pure-table pure-table-striped table logo">
+		<thead>
+			<tr>
+				<th>Category</th>
+				<th>Product</th>
+				<th>Price</th>
+				<th></th>
+			</tr>
+		</thead>
+		<th:block th:each="prds : ${prds}">
+			<tr>
+				<td width="20%" th:text="${prds.category}" />
+				<td width="40%" th:text="${prds.name}" />
+				<td width="10%" th:text="${prds.price}" />
+				<td width="40%"><a class="button-success pure-button" href="#">
+						<i class="fa fa-shopping-cart fa-lg"></i> Checkout
+				</a> <a class="button-error pure-button" href="#"> <i
+						class="fa fa-remove fa-lg"></i> Cancel
+				</a></td>
+			</tr>
+		</th:block>
+	</table>
+</body>
+</html>

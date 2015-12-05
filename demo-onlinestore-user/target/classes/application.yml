@@ -1,0 +1,32 @@
+#spring:
+# thymeleaf:
+#  cache: false
+#
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    metadataMap:
+#      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
+#  client:    # <--- ADD THE CLIENT SECTION!!!
+#    serviceUrl:
+#      defaultZone: ${vcap.services.scs-service-registry.credentials.uri:http://127.0.0.1:8761}/eureka/
+#      
+#---
+#spring:
+#  profiles: cloud
+#  
+#eureka:
+#  instance:
+#    hostname: ${vcap.application.uris[0]}
+#    nonSecurePort: 80
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+    
+spring.jpa:
+  hibernate.ddl-auto: create

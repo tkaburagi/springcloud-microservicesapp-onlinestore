@@ -1,0 +1,15 @@
+---
+applications:
+- name: scs-demo-onlinestore-ui
+  memory: 1G
+  instances: 2
+  path: ./target/demo-0.0.1-SNAPSHOT.war
+  services:
+   - session-replication
+   - p-scs-service-registry
+   - p-scs-circuit-breaker
+   - p-scs-config-server
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  env:
+   SPRING_PROFILES_ACTIVE: cloud 
+   CF_TARGET: https://api.run.pez.pivotal.io

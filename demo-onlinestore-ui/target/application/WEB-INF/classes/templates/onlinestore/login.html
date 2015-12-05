@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http:///www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<meta charset="UTF-8" />
+<title>Pivotal Online Store</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<form class="pure-form" th:method="post" th:action="@{/auth}">
+			<input type="text" name="user" class="pure-input-1-2" placeholder="Username" />
+			<input type="password" class="pure-input-1-2" placeholder="Password" />
+		<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+	</form>
+</body>
+</html>
