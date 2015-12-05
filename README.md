@@ -1,8 +1,8 @@
-= springcloud-microservicesapp-onlinestore
+# springcloud-microservicesapp-onlinestore
 
 This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration.
 
-= Pre-requisite
+# Pre-requisite
 This application requires four services. Refer to Pivotal Documents.
 * MySQL for PCF (Datastore)
 * * http://docs.pivotal.io/p-mysql/index.html
