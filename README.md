@@ -19,11 +19,18 @@ This application requires five PCF services.
 
 ## Build & Push
 ```bash
-  git clone https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore.git
-  cd springcloud-microservicesapp-onlinestore
-  mvn package
-  cf push
+  $ git clone https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore.git
+  $ cd springcloud-microservicesapp-onlinestore
+  $ mvn package
+  $ cf push
 ````
 ## Application Architecture
 
 
+## Demonstration
+### 1. Registry Server
+### 2. Circuit Breaker
+### 3. Config Server
+### 4. HTTP Session Redundancy by Redis
+### 5. Application Auto-recovery and Auto Load Brancing
+### 6. Log Streaming
