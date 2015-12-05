@@ -5,7 +5,7 @@ This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 1
 # Pre-requisite
 This application requires four services. Refer to Pivotal Documents.
 * MySQL for PCF (Datastore)
-* * http://docs.pivotal.io/p-mysql/index.html
+** http://docs.pivotal.io/p-mysql/index.html
 * Redis for PCF (HTTP Session Store)
 * * http://docs.pivotal.io/redis/index.html
 * Spring Cloud Services
