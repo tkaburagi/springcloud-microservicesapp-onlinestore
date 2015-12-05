@@ -17,6 +17,8 @@ This application requires five PCF services.
   * Registry Server (Netflix Eureka and Feign)
    * Service Name : scs-registry-server (depends on manifest.yml) 
 
+Also, having Sumo Logic account information is desired but not mandtory.
+
 ## Build & Push
 ```bash
   $ git clone https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore.git
@@ -28,10 +30,33 @@ This application requires five PCF services.
 This Service has four applications, ui, service, user and order.
 ![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/Architecture.png)
 
+## Tour
+This is a simple Online Store.
+* Login
+ * Default users are "testuser", "tkabruagi" and "robmee"
+ * Password is fake. You can put any value.
+ * If you would like to change or add new users, you woud edit "import.aql" in **demo-onlinestore-user**
+ * After login, creating session and retrieve products via ****demo-onlinestore-service**.
+
+* Home
+ * You can see products list. Checkout button insert the product into orderhistrory table by **demo-onlinestore-order**
+
+* Menu
+ * You can get account information via HTTP session and orderhistory via **demo-onlinestore-order**.
+ 
+* Java Information
+ * Showing Environmental Information and current user via HTTP session. This is a good tool to show session is stored in Redis.
+
+* Kill Application
+ * This causes System.exit(-1) which reproduces JVM accidental shutdown.
+
+* Search 
+ * Not implemented yet. Comming soon, I believe... 
+ 
 ## Demonstration
-### 1. Registry Server
-### 2. Circuit Breaker
-### 3. Config Server
-### 4. HTTP Session Redundancy by Redis
-### 5. Application Auto-recovery and Auto Load Brancing
-### 6. Log Streaming
+###1. Registry Server
+###2. Circuit Breaker
+###3. Config Server
+###4. HTTP Session Redundancy by Redis
+###5. Application Auto-recovery and Auto Load Brancing
+###6. Log Streaming
