@@ -17,3 +17,9 @@ This application requires five PCF services.
   * Registry Server (Netflix Eureka and Feign)
    * Service Name : scs-registry-server (depends on manifest.yml) 
 
+# Build
+ git clone https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore.git
+ cd springcloud-microservicesapp-onlinestore
+ mvn package
+
+# 
