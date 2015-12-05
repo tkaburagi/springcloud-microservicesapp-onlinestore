@@ -25,6 +25,7 @@ This application requires five PCF services.
   $ cf push
 ````
 ## Application Architecture
+This Service has four applications, ui, service, user and order.
 ![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/Architecture.png)
 
 ## Demonstration
