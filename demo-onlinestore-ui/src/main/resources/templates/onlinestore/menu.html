@@ -57,6 +57,14 @@ table {
 .logo {
 	font-family: 'Nunito', sans-serif;
 }
+
+table, td {
+	width="100%";
+}
+
+th.center {
+	text-align: center;
+}
 </style>
 
 
@@ -98,7 +106,13 @@ table {
 				</form>
 			</li>
 		
-			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
+			<li class="pure-menu-item">
+				<form class="pure-form" th:method="post" th:action="@{/logout}"> 
+					<button type="submit" class="button-corp pure-button">
+					<i class="fa fa-sign-out fa-lg"></i><font class="logo"> Logout</font></button>
+				</form>
+			</li>
+		
 			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
 			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
 
@@ -115,7 +129,7 @@ table {
 	<div class="ta1">
 		<h1 class="logo">User Information</h1>
 	</div>
-	<table class="pure-table pure-table-striped table logo">
+	<table class="pure-table pure-table-striped table logo" style="width:90%">
 			<thead>
 				<tr>
 					<th>User ID</th>
@@ -141,17 +155,19 @@ table {
 	<div class="ta1">
 		<h1 class="logo">Your Order History</h1>
 	</div>
-	<table class="pure-table pure-table-striped table logo">
-		<thead>
-			<tr>
-				<th>Product Name</th>
-			</tr>
-		</thead>
-		<th:block th:each="order : ${order}" >
-			<tr>
-				<td width="100%" th:text="${order.product}" />
-			</tr>
-		</th:block>
-	</table>
+	<div class="ta1">
+		<table class="pure-table pure-table-striped table logo" style="width:90%">
+			<thead>
+				<tr>
+					<th class="center">Product Name</th>
+				</tr>
+			</thead>
+			<th:block th:each="order : ${order}" >
+				<tr>
+					<td width="100%" th:text="${order.product}" />
+				</tr>
+			</th:block>
+		</table>
+	</div>
 </body>
 </html>

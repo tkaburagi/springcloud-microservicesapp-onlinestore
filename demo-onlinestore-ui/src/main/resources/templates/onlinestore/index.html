@@ -101,10 +101,13 @@ table {
 				</form>
 			</li>
 		
-			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
-			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
-			<li class="pure-menu-item"><a href="#" class="button-corp pure-button"></a></li>
-
+			<li class="pure-menu-item">
+				<form class="pure-form" th:method="post" th:action="@{/logout}"> 
+					<button type="submit" class="button-corp pure-button">
+					<i class="fa fa-sign-out fa-lg"></i><font class="logo"> Logout</font></button>
+				</form>
+			</li>
+			
 			<li class="pure-menu-item">
 				<form class="pure-form">
 					<input type="text" class="pure-input-rounded" />

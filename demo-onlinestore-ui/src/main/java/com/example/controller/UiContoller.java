@@ -47,6 +47,13 @@ public class UiContoller {
 	}
 	
 	@HystrixCommand
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return returnLogin();
+	}
+	
+	@HystrixCommand
 	@RequestMapping("/kill")
 	public String kill(){
 		System.exit(-1);
@@ -61,6 +68,9 @@ public class UiContoller {
 	@HystrixCommand
 	@RequestMapping("/auth")
 	public String authUser(@RequestParam("user") String user, HttpSession session, Model model) throws JsonParseException, JsonMappingException, IOException {
+		if(session == null) {
+			return returnLogin();
+		}
 		session.setAttribute("userid", getUserInfo(user).getId());
 		session.setAttribute("username", getUserInfo(user).getName());
 		session.setAttribute("address", getUserInfo(user).getAddress());
@@ -100,7 +110,10 @@ public class UiContoller {
 	@HystrixCommand
 	@RequestMapping("/menu")
 	public String menu(Model model, HttpSession session) throws JsonParseException, JsonMappingException, IOException{
-  		model.addAttribute("order", getOrderByUser(session.getAttribute("username").toString()));
+		if(session.getAttribute("username") == null) {
+			return returnLogin();
+		}
+		model.addAttribute("order", getOrderByUser(session.getAttribute("username").toString()));
 		return "onlinestore/menu";
 	}
 	
@@ -121,8 +134,11 @@ public class UiContoller {
 	
 	@HystrixCommand
 	@RequestMapping("/javainfo")
-	public String getJavaInfo(Model model) throws JsonParseException, JsonMappingException, IOException{
+	public String getJavaInfo(Model model, HttpSession session) throws JsonParseException, JsonMappingException, IOException{
 //		System.out.println(session.getAttribute("username"));
+		if(session.getAttribute("username") == null) {
+			return returnLogin();
+		}
 		model.addAttribute("vcap_app", getVCAP());
 		return "onlinestore/javainfo";	
 	}

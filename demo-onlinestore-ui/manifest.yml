@@ -3,7 +3,7 @@ applications:
 - name: scs-demo-onlinestore-ui
   memory: 1G
   instances: 2
-  path: ./target/demo-0.0.1-SNAPSHOT.war
+  path: ./target/demo-onlinestore-ui-0.0.1-SNAPSHOT.war
   services:
    - session-replication
    - p-scs-service-registry
