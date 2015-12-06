@@ -53,4 +53,5 @@ public Orderhistory[] getOrderByUser(String username) throws JsonParseException,
 
 ## 2. Registry Server Dashboard
 You can see status of microservices in a nice dashboard
+![Dashboard](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/assets/Architecture.png)
 
