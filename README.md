@@ -30,7 +30,7 @@ Also, having Sumo Logic account information is desired but not mandtory.
 
 ## Application Architecture
 This Service has four applications, ui, service, user and order.
-![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/Architecture.png)
+![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/assets/Architecture.png)
 
 ## Tour
 This is a simple online store app.
