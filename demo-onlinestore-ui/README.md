@@ -1,1 +1,0 @@
-# scs-demo-onlinestore-ui
