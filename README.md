@@ -31,7 +31,7 @@ This Service has four applications, ui, service, user and order.
 ![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/Architecture.png)
 
 ## Tour
-This is a simple Online Store.
+This is a simple online store app.
 * Login
  * Default users are "testuser", "tkabruagi" and "robmee"
  * Password is fake. You can put any value.
