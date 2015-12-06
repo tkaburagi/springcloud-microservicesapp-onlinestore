@@ -15,10 +15,10 @@
 #    hostname: ${vcap.application.uris[0]}
 #    nonSecurePort: 80
     
-#security:
-# basic:
-#    enabled: false
-#
-#management:
-#  security:
-#    enabled: false
+security:
+ basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
