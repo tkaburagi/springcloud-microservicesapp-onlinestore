@@ -1,0 +1,52 @@
+---
+applications:
+- name: scs-demo-onlinestore-service
+  memory: 1G
+  instances: 1
+  path: ./demo-onlinestore-service/target/demo-onlinestore-service-0.0.1-SNAPSHOT.jar
+  services:
+   - p-scs-service-registry
+   - mysql
+   - p-scs-circuit-breaker
+  env:
+   SPRING_PROFILES_ACTIVE: cloud
+   CF_TARGET: https://api.run.pez.pivotal.io
+
+- name: scs-demo-onlinestore-user
+  memory: 1G
+  instances: 1
+  path: ./demo-onlinestore-user/target/demo-onlinestore-user-0.0.1-SNAPSHOT.jar
+  services:
+   - p-scs-service-registry
+   - mysql
+   - p-scs-circuit-breaker
+  env:
+   SPRING_PROFILES_ACTIVE: cloud
+   CF_TARGET: https://api.run.pez.pivotal.io
+
+- name: scs-demo-onlinestore-order
+  memory: 1G
+  instances: 1
+  path: ./demo-onlinestore-order/target/demo-onlinestore-order-0.0.1-SNAPSHOT.jar
+  services:
+   - p-scs-service-registry
+   - mysql
+   - p-scs-circuit-breaker
+  env:
+   SPRING_PROFILES_ACTIVE: cloud
+   CF_TARGET: https://api.run.pez.pivotal.io
+
+- name: scs-demo-onlinestore-ui
+  memory: 1G
+  instances: 2
+  path: ./demo-onlinestore-ui/target/demo-onlinestore-ui-0.0.1-SNAPSHOT.war
+  services:
+   - session-replication
+   - p-scs-service-registry
+   - p-scs-circuit-breaker
+   - p-scs-config-server
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  env:
+   SPRING_PROFILES_ACTIVE: cloud
+   CF_TARGET: https://api.run.pez.pivotal.io
+
