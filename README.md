@@ -11,11 +11,11 @@ This application requires five PCF services.
   * Why should be the name fixed? -> https://github.com/cloudfoundry/java-buildpack/blob/master/docs/container-tomcat.md 
 * Pivotal Spring Cloud Services : http://docs.pivotal.io/spring-cloud-services/index.html
   * Config Server (Config Server)
-   * Service Name : scs-config-server (depends on manifest.yml) 
+    * Service Name : scs-config-server (depends on manifest.yml) 
   * Circuit Breaker (Netflix Hystrix and Turbine)
-   * Service Name : scs-circuit-breaker (depends on manifest.yml) 
+    * Service Name : scs-circuit-breaker (depends on manifest.yml) 
   * Registry Server (Netflix Eureka and Feign)
-   * Service Name : scs-registry-server (depends on manifest.yml) 
+    * Service Name : scs-registry-server (depends on manifest.yml) 
 
 Also, having Sumo Logic account information is desired but not mandtory.
 
