@@ -26,6 +26,8 @@ Also, having Sumo Logic account information is desired but not mandtory.
   $ mvn package
   $ cf push
 ````
+**It might take several minutes to work fine. This is for Eureka discovery time.**
+
 ## Application Architecture
 This Service has four applications, ui, service, user and order.
 ![Architecture](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/Architecture.png)
