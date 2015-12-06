@@ -57,14 +57,14 @@ This is a simple online store app.
  
 ## Demonstration
 ###1. Registry Server
-* [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/RegistryServer.md)
+  [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/RegistryServer.md)
 ###2. Circuit Breaker
-* [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/CircuitBreaker.md)
+  [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/CircuitBreaker.md)
 ###3. Config Server
-* [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/ConfigServer.md)
+  [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/ConfigServer.md)
 ###4. HTTP Session Redundancy by Redis
-* [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/HttpSessionRedis.md)
+  [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/HttpSessionRedis.md)
 ###5. Application Auto-recovery and Auto Load Brancing
-* [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/AppAutoRecovery.md)
+  [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/AppAutoRecovery.md)
 ###6. Log Streaming
-* [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/LogStreaming.md)
+  [demo guide](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/demoguide/LogStreaming.md)
