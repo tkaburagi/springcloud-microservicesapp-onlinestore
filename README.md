@@ -1,5 +1,6 @@
 # springcloud-microservicesapp-onlinestore
-
+![login](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/assets/login.png)
+![top](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/assets/ondex.png)
 This is a Microservice application for Pivotal Cloud Foundry. Microsevices and 12 Factor Application elements are implemented. This is a very good an application for demonstration. This can run outside PCF using OSS Netflix but some changes and additinal development are needed. **This app was developed for very short term.  Refactoring is highly required. Authentication is actually fake :)**
 
 ## Pre-requisite
