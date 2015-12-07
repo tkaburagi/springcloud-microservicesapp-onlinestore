@@ -1,7 +1,7 @@
 # Registry Server Demonstration
 ## Pre-requisite
- * Confirm four applications running
- * Confirm all apps are bound to regitry server services 
+ * Four applications are running
+ * All apps are bound to regitry server services 
  * Read basic information
   * [Netflix OSS Eureka](http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html)
   * [Pivotal Spring Cloud Registry Server](http://docs.pivotal.io/spring-cloud-services/service-registry/)
