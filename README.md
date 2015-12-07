@@ -35,7 +35,7 @@ This Service has four applications, ui, service, user and order.
 ## Tour
 This is a simple online store app.
 * Login
- * Default users are "testuser", "tkabruagi" and "robmee"
+ * Default users are "testuser", "tkaburagi" and "robmee"
  * Password is fake. You can put any value.
  * If you would like to change or add new users, you could edit "import.sql" in **demo-onlinestore-user**
  * After login, creating session and retrieve products via **demo-onlinestore-service**.
