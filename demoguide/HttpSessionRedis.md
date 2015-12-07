@@ -19,4 +19,5 @@ session.setAttribute("address", getUserInfo(user).getAddress());
 
 2. Stop demo-onlinestore-ui app, using "Kill Application" button.
 
-3. Re-access /javainfo. 
+3. Re-access /javainfo. You can see you access to another index application but session information is still available! Also, if you get access to /menu, all session information remains. This means session information is stored in out-side the application instance, Redis.
+![poc3](https://github.com/tkaburagi1214/springcloud-microservicesapp-onlinestore/blob/master/assets/session-3.png)
