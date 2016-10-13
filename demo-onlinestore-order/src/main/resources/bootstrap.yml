@@ -1,3 +1,7 @@
 spring:
   application:
     name: onlinestore-order
+    
+  zipkin:
+    base-url: http://zipkin-server-tkaburagi.cfapps.io/
+    enabled: true

@@ -30,7 +30,7 @@ public class OrderClient {
 		InstanceInfo instanceInfo = discoveryClient.getNextServerFromEureka("ONLINESTORE-ORDER", false);
 		restTemplate = new RestTemplate();
 		String targetUrl = UriComponentsBuilder.fromUriString(instanceInfo.getHomePageUrl())
-				.path("showall")
+				.path("showorder")
 				.queryParam("username", username)
 				.build()
 				.toString();

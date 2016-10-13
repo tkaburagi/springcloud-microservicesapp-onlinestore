@@ -1,20 +1,11 @@
-#eureka:
-#  instance:
-#    leaseRenewalIntervalInSeconds: 10
-#    metadataMap:
-#      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
-#  client:    # <--- ADD THE CLIENT SECTION!!!
-#    serviceUrl:
-#      defaultZone: ${vcap.services.p-scs-service-registry.credentials.uri:http://eureka-8fb3a242-216b-4f3a-9d41-460a5f0ffc1a.cfapps.pez.pivotal.io}/eureka/
-#     
-#---
-#spring:
-#  profiles: cloud
+spring:
+  application:
+    name: onlinestore-service
+    
+  zipkin:
+    base-url: http://zipkin-server-tkaburagi.cfapps.io/
+    enabled: true
   
-#eureka:
-#  instance:
-#    hostname: ${vcap.application.uris[0]}
-#    nonSecurePort: 80
 security:
   basic:
     enabled: false
